@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "Nav-app",
+			"path": "../../../MINI/Nav-app"
+		},
+		{
+			"name": "SHAMROCK",
+			"path": "../.."
+		},
+		{
+			"name": "Navbar-project",
+			"path": "../../../MINI/Navbar-project"
+		},
+		{
+			"name": "div-project",
+			"path": "../../../MINI/div-project"
+		},
+		{
+			"path": "../../../MINI/my-app"
+		}
+	],
+	"settings": {}
+}
