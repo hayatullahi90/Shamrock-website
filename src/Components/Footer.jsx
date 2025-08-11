@@ -10,7 +10,7 @@ import { BsEnvelopeOpenFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className='flex flex-col items-center gap-2 sticky mb-3 mt-40'>
+    <div className='flex flex-col items-center gap-2 mb-3 mt-40'>
       <div> <img className='h-12 w-28' src={Image3} /></div>
       <div className='flex flex-row mb-2 gap-2'>
         <div><FaFacebook size={24} /></div>

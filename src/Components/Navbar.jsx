@@ -54,22 +54,45 @@ function Navbar(){
                 <Link className='hover:text-pink-500 no-underline text-black' to='/signup'>Sign Up</Link>
             </li>
             </ul>
-            <div className="md:hidden" onClick={handleNav}>
-                {nav? <FaTimes/> : <HiMenu/>}
+            <div className="md:hidden flex absolute right-3" onClick={handleNav}>
+                {nav? <FaTimes size={24} style={{color: "black"}}/> : <HiMenu size={24} style={{color: "black"}}/>}
             </div>
             <ul className={`${nav? "text-white opacity-100 transform translate-x-0" : "opacity-0 transform -translate-y-full"}
-            transition-translate top-0 left-0 absolute h-screen w-60 flex flex-col justify-center items-center text-yellow-900 text-2xl`} onClick={()=> setNav(false)}>
+            transition-translate top-0 left-0 absolute bg-white h-screen w-80 flex flex-col  gap-4 justify-center items-center text-yellow-900 text-2xl`} onClick={()=> setNav(false)}>
             <li>
-                <Link to='/location'>Location</Link>
+                <Link to='/'>Home</Link>
+            </li>
+            <li onMouseLeave={() => setDropdown(false)} onMouseEnter={()=> setDropdown(true)} >
+                <Link className='flex flex-row gap-1 items-center justify-center no-underline' to='/'>Programmes <IoIosArrowDown size={16}/></Link>
+                 <ul className={`${dropdown? "flex flex-col gap-2 bg-white py-3 px-3 mb-28 justify-center absolute" : "hidden"} `}>
+                    <li>
+                        <Link className='no-underline text-black hover:text-black/60' to='/west'>North-West Health Hackhaton 2024</Link>
+                    </li>
+                     <li>
+                        <Link className='no-underline text-black hover:text-black/60' to='/kids'>Kids Programmes</Link>
+                    </li>
+                     <li>
+                        <Link className='no-underline text-black hover:text-black/60' to='/classes'>Our Classes</Link>
+                    </li>
+                </ul>
+            </li>
+            <li  className={`${dropdown? "mt-40" : "mt=0"}`}>
+                <Link to='/'>Blog</Link>
             </li>
             <li>
-                <Link to='/contact'>Contact</Link>
+                <Link to='/'>Startups</Link>
             </li>
             <li>
-                <Link to='menu'>Menu</Link>
+                <Link to='/students'>Students</Link>
             </li>
             <li>
-                <Link to='services'>Services</Link>
+                <Link to='/about'>About Us</Link>
+            </li>
+            <li>
+                <Link to='/contact'>Contact Us</Link>
+            </li>
+            <li>
+                <Link to='/signup'>Sign Up</Link>
             </li>
             </ul>
         </div>
