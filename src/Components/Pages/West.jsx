@@ -7,8 +7,8 @@ import Image4 from '../../assets/zainpay.jpg';
 const West = () => {
   return (
     <div>
-      <div className='my-5 mx-32'>
-        <div className='mb-20 grid grid-flow-col gap-5'>
+      <div className='my-5 lg:mx-32 md:mx-20 sm:mx-16'>
+        <div className='mb-20 grid lg:grid-cols-12 md:grid-cols-8 gap-5'>
         <div className='col-span-8'>
           <h1 className='text-blue-700 font-bold text-7xl'>North-west</h1>
           <h1 className='text-pink-600 font-bold text-6xl'>Health Innovations Hackathon</h1>
@@ -33,12 +33,12 @@ const West = () => {
       </div>
       </div>
 
-      <div className= 'py-28 px-40 bg-gradient-to-b from-white to-gray-100'>
+      <div className= 'lg:py-28 lg:px-40 md:py-14 md:px-20 sm:py-10 sm:px-10 bg-gradient-to-b from-white to-gray-100'>
         <div className='row'>
           <div className='mb-10'>
             <h1 className='text-blue-800 font-bold text-5xl'>Focus Area</h1>
           </div>
-          <div className='grid grid-cols-12 gap-4'>
+          <div className='grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-4 gap-4'>
             <div className='col-span-4'>
             <h4 className='text-blue-800 font-bold text-xl'>Rural Healthcare Accessibility</h4>
             <p className='text-gray-500 text-xl'>Developing affordable and sustainable solutions for delivering healthcare services to remote and underserved communities. Leveraging technology to bridge the gap between healthcare providers and rural populations.</p>
@@ -63,8 +63,8 @@ const West = () => {
       </div>
 
           </div>
-      <div className='my-5 mx-32'>
-        <div className='grid grid-cols-12 mb-20 gap-6'>
+      <div className='my-5 lg:mx-32 md:mx-20 sm:mx-16'>
+        <div className='grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-4 mb-20 gap-6'>
         <div className='col-span-4'>
           <h4 className='text-blue-800 font-bold mb-2 text-2xl'>Benefit</h4>
           <ul className='list-disc'>
@@ -99,7 +99,7 @@ const West = () => {
 
       <div className='row'>
         <div className='mb-4'><h1 className='text-blue-800 font-bold text-5xl'>Important Dates</h1></div>
-        <div className='grid grid-cols-12 gap-4'>
+        <div className='grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-3 gap-4'>
           <div className='col-span-3'>
           <h4 className='text-blue-800 font-bold text-2xl'>Application Open</h4>
           <ul className='list-disc'>
@@ -133,7 +133,7 @@ const West = () => {
       <div className='mt-20 mb-3'>
         <h1 className='text-blue-800 font-bold text-5xl'>Call For Mentors</h1>
         <p className='text-gray-500 text-xl'>Mentors and skilled experts from all disciplines are welcome. Attend for a couple of hours or the whole days. Mentors can assist teams with their subject matter expertise and experience while enhancing their own skills as leaders, educators, and communicators by guiding rising talent.</p>
-        <button className='text-white font-bold bg-black rounded py-2 px-4 mt-3'>Mentor registration</button>
+        <button className='text-white font-bold bg-black rounded-xl py-2 px-4 mt-3'>Mentor registration</button>
       </div>
 
       <div className='flex flex-col items-center mt-40'>

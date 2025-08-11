@@ -10,7 +10,7 @@ import ClassesCard from '../ClassesCard';
 
 const Classes = () => {
   return (
-     <div className='pt-16 pb-20 px-32 bg-gradient-to-b from-white to-gray-100'>
+     <div className='lg:py-16 lg:px-32 md:py-12 md:px-24 sm:py-8 sm:px-16 bg-gradient-to-b from-white to-gray-100'>
           <div className="mb-10 flex flex-col items-center">
           <h5 className='text-red-400 font-bold mb-3'>BROWSE FROM OUR</h5>
           <h3 className="text-blue-900 font-bold text-5xl">Classes</h3>

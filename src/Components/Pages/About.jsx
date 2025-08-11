@@ -23,8 +23,8 @@ import Image26 from '../../assets/partner-6.jpg';
 
 const About = () => {
   return (
-    <div className='px-24 py-20'>
-      <div className='mb-5 grid grid-cols-12 gap-4'>
+    <div className='lg:px-24 lg:py-20 md:px-16 md:py-10 sm:px-12 sm:py-8'>
+      <div className='mb-5 lg:grid grid-cols-12 md:grid-cols-6 gap-4'>
         <div className='col-span-6'>
           <h1 className='text-blue-900 text-7xl'>Hi there, we're</h1>
           <h1 className='text-pink-700 text-6xl'>Shamrock Innovations</h1>
@@ -35,7 +35,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-12 gap-4'>
+      <div className='grid lg:grid-cols-12 md:grid-cols-8 gap-4'>
         <div className='col-span-5 '><img className=' h-72 w-full rounded-xl' src={Image3}/></div>
         <div className='col-span-3 ' ><img className=' h-72 w-full rounded-xl' src={Image4}/></div>
         <div className='col-span-4'><img className=' h-72 w-full rounded-xl' src={Image5}/></div>
@@ -65,7 +65,7 @@ const About = () => {
         <p className='text-gray-500 text-2xl'>Want to work with some of the best global talent and build a tool used<br/> by all the companies you know and love? Join the Geeks team and<br/> help shape the future of design.</p>
       </div>
 
-     <div className='flex flex-row justify-between items-center'>
+     <div className='flex lg:flex-row sm:flex-col justify-between items-center'>
           <div className='flex flex-col items-center'>
             <img className='h-72 w-72 rounded-full' src={Image16}/>
             <h3 className='text-blue-700'>Sa'adat Aliyu</h3>
@@ -90,13 +90,13 @@ const About = () => {
 
      <div>
            <h5 className='text-red-700 mt-40 mb-10 text-center'>OUR PARTNERS</h5>
-           <div className='flex flex-row items-center gap-4 justify-center'>
-           <div className='h-24 w-60'><img src={Image24}/></div>
-           <div className='h-24 w-60'><img src={Image22}/></div>
-           <div className='h-24 w-60'><img src={Image21}/></div>
-           <div className='h-24 w-60'><img src={Image26}/></div>
-           <div className='h-24 w-60'><img src={Image25}/></div>
-           <div className='h-24 w-60'><img src={Image23}/></div>
+           <div className='grid lg:grid-cols-12 md:grid-col-8 sm:grid-cols-4 gap-8 justify-contents-center'>
+           <img className='h-24 w-60 col-span-2' src={Image24}/>
+           <img className='h-24 w-60 col-span-2'  src={Image22}/>
+           <img className='h-24 w-60 col-span-2' src={Image21}/>
+           <img className='h-24 w-60 col-span-2' src={Image26}/>
+           <img className='h-24 w-60 col-span-2' src={Image25}/>
+           <img className='h-24 w-60 col-span-2' src={Image23}/>
            </div>
 
      </div>

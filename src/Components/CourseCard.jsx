@@ -6,7 +6,7 @@ const CourseCard = ({title, time, complexity, instructor, image}) => {
   return (
    
 
-          <div className=" rounded-xl overflow-hidden border">
+          <div className=" rounded-xl overflow-hidden shadow-lg">
             <a href='#'><img className='h-fit' src={image} /></a>
             <div className="py-4 px-4">
             <h5 className="mb-2">{title}</h5>

@@ -4,7 +4,7 @@ import { GiNetworkBars } from "react-icons/gi";
 
 const ClassesCard = ({title, time, complexity, image, price}) => {
   return (
-                    <div className="card p-0 rounded-xl overflow-hidden border-2">
+                    <div className="card p-0 rounded-xl overflow-hidden shadow-lg">
                       <a href='#'><img className='h-fit' src={image} /></a>
                       <div className="card-body py-4 px-4">
                       <h5 className="mb-2 hover:text-pink-500">Robotic For Kids</h5>

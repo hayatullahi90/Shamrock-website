@@ -10,8 +10,8 @@ const Signup = () => {
   const [year, setYear] = useState("");
 
   return (
-    <div className='h-screen'>
-      <div className='grid grid-cols-12 grid-flow-col'>
+    <div>
+      <div className='grid lg:grid-cols-12 md:grid-cols-6'>
         <div className='col-span-6'>
           <div className='px-40 py-16'>
             <img className='h-12 w-28 mb-10' src={Logo} />
@@ -23,23 +23,26 @@ const Signup = () => {
           <div className='col-span-6 bg-pink-100'>
           <form className='px-40 py-24'>
             <div className='pt-6'>
-              <label htmlFor='firstname'>First Name:*</label>
-              <input className='w-full py-2 px-2' type='text' id='firstname' placeholder='First Name'
+              <label htmlFor='firstname'>First Name:*<br/>
+              <input className='w-full py-2 px-2 bg-white' type='text' id='firstname' placeholder='First Name'
                 onChange={(e) => setFirstname(e.target.value)} required />
+              </label>
             </div>
             <div className='pt-6'>
-              <label htmlFor='email'>Email*</label>
-              <input className='w-full py-2 px-2' type='email' id='email' placeholder='Email'
+              <label htmlFor='email'>Email*<br/>
+              <input className='w-full py-2 px-2 bg-white' type='email' id='email' placeholder='Email'
                 onChange={(e) => setEmail(e.target.value)} required />
+              </label>
             </div>
             <div className='pt-6'>
-              <label htmlFor='contact'>Phone Number*</label>
-              <input className='w-full py-2 px-2' type='tel' id='contact' placeholder='Phone'
+              <label htmlFor='contact'>Phone Number*<br/>
+              <input className='w-full py-2 px-2 bg-white' type='tel' id='contact' placeholder='Phone'
                 onChange={(e) => setContact(e.target.value)} required />
+              </label>  
             </div>
             <div className='pt-6'>
               <label htmlFor='program'>Program*</label>
-              <select  className='w-full py-2 px-2' id='select' value={selectedOption}
+              <select  className='w-full py-2 px-2 bg-white' id='select' value={selectedOption}
                 onChange={(e) => setSelectedOption(e.target.value)} required >
                 <option value="" disabled>Select</option>
                 <option>Intern</option>
@@ -55,7 +58,7 @@ const Signup = () => {
               <input className='w-full py-2 px-2' type='number' id='year' min='1900' max='2025' placeholder='Select Year'
                 onChange={(e) => setYear(e.target.value)} required />
             </div>
-            <button className='pt-6 px-4 py-2 text-white font-bold rounded-xl bg-blue-800' type='submit'>Submit</button>
+            <button className='mt-6 px-4 py-2 text-white font-bold rounded-xl bg-blue-800' type='submit'>Submit</button>
           </form>
         </div>
       </div>
