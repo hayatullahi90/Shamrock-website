@@ -160,7 +160,7 @@ function Home() {
             </div>
           </div>
           <div className="mx-20">
-            <div className="grid grid-cols-12 overflow-hidden">
+            <div className="grid lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-3 overflow-hidden">
               <div className="col-span-3 shadow-lg rounded-xl overflow-hidden">
                 <a href="#">
                   <img className="h-fit" src={Image5} />
@@ -180,7 +180,7 @@ function Home() {
               See All Instructors
             </button>
           </div>
-          <div className="container mx-auto ">
+          <div className="container mx-auto px-16">
             <div className="flex justify-between mt-24 mb-14 gap-16">
               <div className="col-span-4">
                 <h1 className="text-blue-800 text-5xl font-bold">
